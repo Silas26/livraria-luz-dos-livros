@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Livraria Luz dos Livros</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background: #fffaf5; color: #333; line-height: 1.6; }
+        header {
+            background: #6b4c3b;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        header h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+        header p { font-size: 1.1rem; }
+        section {
+            padding: 2rem 1rem;
+            max-width: 900px;
+            margin: auto;
+        }
+        h2 {
+            color: #6b4c3b;
+            margin-bottom: 1rem;
+            font-size: 1.6rem;
+        }
+        ul {
+            list-style: disc;
+            margin-left: 2rem;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 1rem;
+            border-radius: 10px;
+        }
+        footer {
+            background: #6b4c3b;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+        button {
+            display: block;
+            margin: 2rem auto;
+            background: #d4a373;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background: #bc8b58;
+        }
+        a {
+            color: #6b4c3b;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Livraria Luz dos Livros</h1>
+        <p>Um cantinho literário no coração da cidade</p>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre a Livraria</h2>
+            <p>Somos uma livraria de bairro apaixonada por literatura, cultura e boas conversas. Oferecemos uma seleção especial de livros novos e usados, encontros literários, lançamentos e um espaço acolhedor para quem ama ler.</p>
+            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" alt="Imagem da livraria aconchegante">
+        </section>
+
+        <section id="informacoes">
+            <h2>Benefícios Exclusivos de Visitar Nossa Livraria</h2>
+            <ul>
+                <li><strong>Descontos especiais:</strong> Só para quem visita nossa loja física</li>
+                <li><strong>Eventos literários e lançamentos:</strong> Participe de nossos encontros e palestras com autores locais e nacionais</li>
+                <li><strong>Seleção de livros usados:</strong> Encontre livros incríveis a preços acessíveis</li>
+                <li><strong>Clube do Livro:</strong> Junte-se ao nosso clube do livro mensal e compartilhe suas leituras com outros amantes da literatura</li>
+                <li><strong>Espaço aconchegante:</strong> Um local perfeito para relaxar e conversar sobre livros com outros leitores</li>
+            </ul>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco pelo e-mail: <a href="mailto:contato@luzdoslivros.com">contato@luzdoslivros.com</a></p>
+        </section>
+
+        <button id="visitar-btn">📍 Quero Visitar</button>
+    </main>
+
+    <script>
+        document.getElementById("visitar-btn").addEventListener("click", function() {
+            alert("Estamos ansiosos pela sua visita! Veja o mapa para nos encontrar.");
+            window.open("https://maps.google.com", "_blank");
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2025 Livraria Luz dos Livros. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
